@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My (fake) Journal</title>
+    <link rel="icon" type = "image/png" href="https://cdn.discordapp.com/attachments/516374155017322506/829489762569551932/loodneutral.png">
+</head>
+<body>
+    <header class="page-header">
+        <h1>My Journal</h1>
+        <h2>Joshua Wang</h2>
+        <details>
+            <summary>NOTE:</summary>
+            These journal entries are <em>all</em> made up.
+        </details>
+        <nav>
+            <h3 id="date-index">Jump to Date</h3>
+            <ul>
+                <li><a href="#4-7-21"><span class="date"><b>4/7/2021</b></span></a></li>
+                <li><a href="#4-6-21"><span class="date"><b>4/6/2021</b></span></a></li>
+                <li><a href="#4-5-21"><span class="date"><b>4/5/2021</b></span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="journal-entries">
+            <h2 id="4-7-21"><span class="date">4/7/2021</span></h2>
+            <h3>Wednesday</h3>
+            <section>
+            <h4>To-Do:</h4>
+                <ol>
+                    <li>Work on CS project</li>
+                    <li>Clean bathroom</li>
+                    <li>Take out the trash tomorrow</li>
+                </ol>
+            </section>
+            <section>
+                <p>I woke up late and had to rush to get online for my first lecture of the day. My favorite part about remote learning is how quickly you can 
+                    get to class. After my classes, I walked the dog and did some exercise. I took a trip to Costco for some groceries after that. After 
+                    finishing some work for my classes, I played <i>Terraria</i>> with the boys. Typical stuff.<br>
+                    For dinner, I had a homemade bowl of ramen (<strong>NOT</strong> instant), shown below:
+                </p>
+                <img width=480px src="https://cdn.discordapp.com/attachments/206493288784461836/801207957417099315/image0.jpg" alt="Bowl of ramen">
+            </section>
+            <hr>
+        </div>
+        <div class="journal-entries">
+            <h2 id="4-6-21"><span class="date">4/6/2021</span></h2>
+            <h3>Tuesday</h3>
+            <section>
+            <h4>To-Do:</h4>
+                <ol>
+                    <li>Work on CS project</li>
+                    <li>Get groceries</li>
+                    <li>Finish Japanese HW</li>
+                </ol>
+            </section>
+            <section>
+                <p>I had a weird dream. I can't really remember anything about it, just that it was incredibly weird. Strange how that works. 
+                    Anyways, I had a fried egg and yogurt for breakfast, and went to class. My mind must have been somewhere else, because I could not 
+                    follow anything at all today. After my classes, I played with the dog and exercised a bit. I worked on that new coding project that was 
+                    assigned today, got frustrated for a couple of hours of bug squishing, and decided to take a break from it (something I <em>never</em> do, 
+                    but I have to stop my habit of not stopping until everything is done).<br>
+                    For dinner, I ordered some pad thai and curry. Very good.
+                </p>
+                <audio controls src="https://cdn.discordapp.com/attachments/444973453884260352/829515096581210132/Twilight_Starry_Coffee_Shop_-_The_Sound_of_Kirby_Cafe_2.mp3"><code>audio</code> element could not be displayed.</audio>
+                <p>Twilight Starry Coffee Shop - The Sound of Kirby Cafe 2<br>
+                    I listen to all types of music when coding (ranging from nothing at all to high-energy drum n bass to jazz/lo-fi video game remixes), 
+                    so here's something I listened to today.
+                </p>
+            </section>
+            <hr>
+        </div>
+        <div class="journal-entries">
+            <h2 id="4-5-21"><span class="date">4/5/2021</span></h2>
+            <h3>Monday</h3>
+            <section>
+            <h4>To-Do:</h4>
+                <ol>
+                    <li>Reply to mom's email</li>
+                </ol>
+            </section>
+            <section>
+                <p>Pretty normal day. Wake up, go to class, do some homework. I did talk with some friends from high school, so that was nice. I ended up spending 
+                    a good amount of my day watching random videos on YouTube, including a video of someone making a knife out of milk (displayed below). I didn't 
+                    have much to do today, so I just took it easy after finishing my work and chores.<br>
+                    For dinner, I had chicken katsu with shredded cabbage. Can't go wrong with that.
+                </p>
+                <p><a href="https://www.youtube.com/watch?v=t557dPspLxo">カルーアミルクを作っていたら牛乳から包丁が作れると思った - YouTube</a></p>
+                <video controls width = 480px src="/videos/カルーアミルクを作っていたら牛乳から包丁が作れると思った.mp4"><code>video</code> element could not be displayed.</video>
+            </section>
+            <hr>
+        </div>
+    </main>
+    <footer>
+        <form action="" method="get" class="form-example">
+            <h2>Journal Entry Submission Form</h2>
+            <div class="journal-form">
+              <label for="date">Date (MM/DD/YYYY): </label>
+              <input type="date" name="date" id="date" required>
+            </div>
+
+            <div class="journal-form">
+                <label for="dow">Day of the Week:</label>
+
+                <select name="days" id="dow">
+                    <option value="sun">Sunday</option>
+                    <option value="mon">Monday</option>
+                    <option value="tue">Tuesday</option>
+                    <option value="wed">Wednesday</option>
+                    <option value="thu">Thursday</option>
+                    <option value="fri">Friday</option>
+                    <option value="sat">Saturday</option>
+                </select>
+            </div>
+
+            <div class="journal-form">
+              <label for="td">To-Do List: </label>
+              <input type="checkbox" name="td" id="td" required>
+            </div>
+
+            <div class="journal-form">
+              <label for="tdlist">To-Do Entry: </label>
+              <input type="text" name="tdlist" id="tdlist">
+            </div>
+
+            <div class="journal-form">
+                <label for="story">Main Body:<br></label>
+                <textarea id="story" name="story"
+                        rows="5" cols="40">
+                Write about your day here...
+                </textarea>
+            </div>
+
+            <div class="journal-form">
+                <fieldset>
+                    <legend>File Type</legend>
+                
+                    <input type="radio" id="img" name="filetype">
+                    <label for="img">Image</label><br/>
+                
+                    <input type="radio" id="vid" name="filetype">
+                    <label for="vid">Video</label><br/>
+                
+                    <input type="radio" id="aud" name="filetype">
+                    <label for="aud">Audio</label>
+
+                    <input type="radio" id="other" name="filetype">
+                    <label for="other">Other</label>
+                </fieldset>
+            </div>
+
+            <div class="journal-form">
+                <label for="filedesc">File Description: </label>
+                <input list="descs" id="filedesc" name="filedesc">
+
+                <datalist id="descs">
+                    <option value="This is an image">
+                    <option value="This is a video">
+                    <option value="This is audio">
+                    <option value="This is a file">
+                </datalist>
+            </div>
+
+            <div class="journal-form">
+                <button class="submit"
+                type="button">
+                Submit
+                </button>
+            </div>
+          </form>
+        <hr>
+        <p>© 2021 Joshua Wang</p>
+    </footer>
+</body>
+</html>
