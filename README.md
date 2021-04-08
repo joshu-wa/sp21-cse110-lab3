@@ -1,0 +1,1 @@
+Link to Lab 2 GitHub Page: [https://lutias.github.io/Lab2/](https://lutias.github.io/Lab2/)
