@@ -6,29 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My (fake) Journal</title>
     <link rel="icon" type = "image/png" href="https://cdn.discordapp.com/attachments/516374155017322506/829489762569551932/loodneutral.png">
+    <link rel="stylesheet" href="journalstyle.css">
+    <style>
+    body {
+      background-color: rgb(50, 55, 63);
+      color: #dde5f1;
+      margin-left: 0vw;
+      margin-right: 0vw;
+      margin-top: 0vh;
+      margin-bottom: 0vmin;
+    }
+    </style>
 </head>
 <body>
     <header class="page-header">
         <h1>My Journal</h1>
         <h2>Joshua Wang</h2>
-        <details>
-            <summary>NOTE:</summary>
+        <details style="color:white;">
+            <summary >NOTE:</summary>
             These journal entries are <em>all</em> made up.
         </details>
-        <nav>
-            <h3 id="date-index">Jump to Date</h3>
-            <ul>
-                <li><a href="#4-7-21"><span class="date"><b>4/7/2021</b></span></a></li>
-                <li><a href="#4-6-21"><span class="date"><b>4/6/2021</b></span></a></li>
-                <li><a href="#4-5-21"><span class="date"><b>4/5/2021</b></span></a></li>
-            </ul>
-        </nav>
+        <h3 id="date-index">Jump to Date:</h3>
     </header>
+    <nav>
+        <ul id="date">
+            <li><a href="#4-7-21"><span class="date"><b>4/7/2021</b></span></a></li>
+            <li><a href="#4-6-21"><span class="date"><b>4/6/2021</b></span></a></li>
+            <li><a href="#4-5-21"><span class="date"><b>4/5/2021</b></span></a></li>
+        </ul>
+    </nav>
     <main>
         <div class="journal-entries">
-            <h2 id="4-7-21"><span class="date">4/7/2021</span></h2>
-            <h3>Wednesday</h3>
-            <section>
+            <div>
+                <h2 id="4-7-21"><span class="date">4/7/2021</span></h2>
+                <h3>Wednesday</h3>
+            </div>
+            <section id="todo">
                 <h4>To-Do:</h4>
                     <ol>
                         <li>Work on CS project</li>
@@ -36,21 +49,22 @@
                         <li>Take out the trash tomorrow</li>
                 </ol>
             </section>
-            <section>
+            <section id="day">
                 <h4>Day in Review:</h4>
                 <p>I woke up late and had to rush to get online for my first lecture of the day. My favorite part about remote learning is how quickly you can 
                     get to class. After my classes, I walked the dog and did some exercise. I took a trip to Costco for some groceries after that. After 
-                    finishing some work for my classes, I played <i>Terraria</i>> with the boys. Typical stuff.<br>
+                    finishing some work for my classes, I played <i>Terraria</i> with the boys. Typical stuff.<br>
                     For dinner, I had a homemade bowl of ramen (<strong>NOT</strong> instant), shown below:
                 </p>
                 <img width=480 src="https://cdn.discordapp.com/attachments/206493288784461836/801207957417099315/image0.jpg" alt="Bowl of ramen">
             </section>
-            <hr>
         </div>
         <div class="journal-entries">
-            <h2 id="4-6-21"><span class="date">4/6/2021</span></h2>
-            <h3>Tuesday</h3>
-            <section>
+            <div>
+                <h2 id="4-6-21"><span class="date">4/6/2021</span></h2>
+                <h3>Tuesday</h3>
+            </div>
+            <section id="todo">
                 <h4>To-Do:</h4>
                     <ol>
                         <li>Work on CS project</li>
@@ -58,7 +72,7 @@
                         <li>Finish Japanese HW</li>
                     </ol>
             </section>
-            <section>
+            <section id="day">
                 <h4>Day in Review:</h4>
                 <p>I had a weird dream. I can't really remember anything about it, just that it was incredibly weird. Strange how that works. 
                     Anyways, I had a fried egg and yogurt for breakfast, and went to class. My mind must have been somewhere else, because I could not 
@@ -73,18 +87,19 @@
                     so here's something I listened to today.
                 </p>
             </section>
-            <hr>
         </div>
         <div class="journal-entries">
-            <h2 id="4-5-21"><span class="date">4/5/2021</span></h2>
-            <h3>Monday</h3>
-            <section>
+            <div>
+                <h2 id="4-5-21"><span class="date">4/5/2021</span></h2>
+                <h3>Monday</h3>
+            </div>
+            <section id="todo">
                 <h4>To-Do:</h4>
                     <ol>
                         <li>Reply to mom's email</li>
                     </ol>
             </section>
-            <section>
+            <section id="day">
                 <h4>Day in Review:</h4>
                 <p>Pretty normal day. Wake up, go to class, do some homework. I did talk with some friends from high school, so that was nice. I ended up spending 
                     a good amount of my day watching random videos on YouTube, including a video of someone making a knife out of milk (displayed below). I didn't 
@@ -94,10 +109,9 @@
                 <p><a href="https://www.youtube.com/watch?v=t557dPspLxo">カルーアミルクを作っていたら牛乳から包丁が作れると思った - YouTube</a></p>
                 <video controls width = 480 src="/videos/カルーアミルクを作っていたら牛乳から包丁が作れると思った.mp4"><code>video</code> element could not be displayed.</video>
             </section>
-            <hr>
         </div>
     </main>
-    <footer>
+    <footer class="page-footer">
         <form method="get" class="form-example">
             <h2>Journal Entry Submission Form</h2>
             <div class="journal-form">
@@ -175,7 +189,7 @@
             </div>
           </form>
         <hr>
-        <p>© 2021 Joshua Wang</p>
+        <p style="margin:1vw">© 2021 Joshua Wang</p>
     </footer>
 </body>
 </html>
